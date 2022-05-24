@@ -1,0 +1,61 @@
+/* Selector universal: nos permite borrar estilos que vienen por default en html */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container{
+    background-color: #3c39fa69;
+    color: white;
+    padding: 20px 0
+    ;
+    display: flex;
+    /*alinear horizontalmente */
+    justify-content: center;
+}
+.menu{
+    border: 1px solid white;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.product-container{
+    background-color: aliceblue;
+    color: rgb(18, 75, 56);
+    display: flex;
+    justify-content: center;
+}
+
+.product{
+    width: 70%;
+    /* nueva forma de medida 
+    viewport*/
+    height: 40vh;
+    display: flex ;
+    justify-content: space-around;
+    /*Alinear verticalmente*/
+    padding-top: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.photo-grid-container{
+    display: flex;
+    justify-content: center;
+}
+.photo-grid{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    /* cuando desbordan los elementos se activa la propiedad flex-wrap: wrap*/
+    flex-wrap: wrap;
+    
+}
+.first-item{
+    /* orden- sin afectar a los elementos circundantes /derecha agrego un numero positivo /izquierda, agrego un numero negativo*/
+    order: 1;
+}
+.last-item{
+    order:-1;
+}
